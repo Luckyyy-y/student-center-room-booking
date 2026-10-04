@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Booking</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-left">
+        <img src="./images/uh-logo.png" alt="UH Logo">
+        <h1>UH Sugar Land Student Center</h1>
+    </div>
+
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./faq.html">FAQ</a>
+        <a class="active-link" href="./booking.html">Booking</a>
+        <a href="./reference.html">Reference</a>
+    </nav>
+</header>
+
+<main class="booking-page">
+
+    <section class="booking-title">
+        <h1>Room Booking</h1>
+        <p>Reserve a room for your study session, meeting, or event. Please check room availability and complete the form below to request a booking.</p>
+    </section>
+
+    <section class="available-rooms">
+        <h2>Available Rooms</h2>
+
+        <div class="room-card-row">
+            <div class="room-card">
+                <img src="./images/study-room-small.jpg" alt="Study Room Small">
+                <div>
+                    <h3>Study Room Small</h3>
+                    <p>Capacity: 2-4 people</p>
+                    <p class="available">Available</p>
+                    <p>Ideal for individual or small group study sessions.</p>
+                </div>
+            </div>
+
+            <div class="room-card">
+                <img src="./images/study-room-medium.jpg" alt="Study Room Medium">
+                <div>
+                    <h3>Study Room Medium</h3>
+                    <p>Capacity: 5-8 people</p>
+                    <p class="available">Available</p>
+                    <p>Great for group projects and collaborative work.</p>
+                </div>
+            </div>
+
+            <div class="room-card">
+                <img src="./images/meeting-room-large.jpg" alt="Meeting Room Large">
+                <div>
+                    <h3>Meeting Room Large</h3>
+                    <p>Capacity: 9-12 people</p>
+                    <p class="available">Available</p>
+                    <p>Perfect for meetings, presentations, and events.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-form-area">
+        <h2>Book a Room</h2>
+
+        <form action="/bookings" method="POST">
+            <div class="form-grid">
+                <div>
+                    <label>Full Name</label>
+                    <input type="text" name="fullName" placeholder="Enter your full name" required>
+                </div>
+
+                <div>
+                    <label>Room Type</label>
+                    <select name="roomType" required>
+                        <option value="">Choose a room</option>
+                        <option>Study Room Small</option>
+                        <option>Study Room Medium</option>
+                        <option>Meeting Room Large</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Student Email</label>
+                    <input type="email" name="email" placeholder="Enter your UH email" required>
+                </div>
+
+                <div>
+                    <label>Date</label>
+                    <input type="date" name="date" required>
+                </div>
+
+                <div>
+                    <label>Purpose</label>
+                    <input type="text" name="purpose" placeholder="e.g., Study Group, Meeting" required>
+                </div>
+
+                <div>
+                    <label>Start Time</label>
+                    <select name="startTime" required>
+                        <option value="">Select time</option>
+                        <option>8:00 AM</option>
+                        <option>9:00 AM</option>
+                        <option>10:00 AM</option>
+                        <option>11:00 AM</option>
+                        <option>12:00 PM</option>
+                        <option>1:00 PM</option>
+                        <option>2:00 PM</option>
+                        <option>3:00 PM</option>
+                        <option>4:00 PM</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>End Time</label>
+                    <select name="endTime" required>
+                        <option value="">Select time</option>
+                        <option>9:00 AM</option>
+                        <option>10:00 AM</option>
+                        <option>11:00 AM</option>
+                        <option>12:00 PM</option>
+                        <option>1:00 PM</option>
+                        <option>2:00 PM</option>
+                        <option>3:00 PM</option>
+                        <option>4:00 PM</option>
+                        <option>5:00 PM</option>
+                    </select>
+                </div>
+            </div>
+
+            <label>Additional Remarks</label>
+            <textarea name="remarks" placeholder="Type any additional information here"></textarea>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <p>Gerardo Vera | gavera@cougarnet.uh.edu</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "uh-sugar-land-student-center-backend",
+  "version": "1.0.0",
+  "description": "Backend for UH Sugar Land Student Center",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1" 
+  }
+}
